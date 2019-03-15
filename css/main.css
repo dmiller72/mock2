@@ -79,7 +79,7 @@ svg {
 
 @media(max-width: 414px) {
   body {
-    overflow: hidden; }
+    overflow-x: hidden; }
 
   nav {
     position: absolute;
@@ -116,6 +116,9 @@ svg {
     margin: 0; } }
 .show {
   transform: translateX(0); }
+
+#map {
+  display: none; }
 
 /**************SERVICES************ */
 .services {
