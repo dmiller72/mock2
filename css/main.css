@@ -320,7 +320,9 @@ svg {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  justify-content: center; }
+  justify-content: center; 
+  padding: 0 15em;
+}
 @media(max-width: 1024px) {
   .projects {
     grid-template-columns: 1fr;
