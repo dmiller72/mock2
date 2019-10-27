@@ -62,7 +62,7 @@ header {
     font-weight: bold; }
   header .logo {
     font-family: "Ubuntu", sans-serif;
-    font-size: 2rem;
+    font-size: 2em;
     letter-spacing: 3px;
     font-weight: 700;
     text-transform: uppercase; }
