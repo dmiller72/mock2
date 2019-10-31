@@ -22,10 +22,15 @@ main {
   opacity: 0.8;
   color: #f1e9e9;
   padding: 3rem 10vw 0;
-  text-align: center; }
+  text-align: center; 
+}
+
 @media(max-width: 416px) {
   main {
-    padding: 0; } }
+    padding: 0; 
+  } 
+
+  }
 @keyframes color {
   0% {
     background-color: blue; }
@@ -323,6 +328,12 @@ svg {
   justify-content: center; 
   padding: 0 15em;
 }
+
+@media (max-width: 416px) {
+  .projects {
+    padding: 0;
+  }
+}
 @media(max-width: 1024px) {
   .projects {
     grid-template-columns: 1fr;
@@ -339,7 +350,7 @@ svg {
     grid-column: 1; } }
 @media(max-width: 415px) {
   .projects h1 {
-    font-size: 13vw; } }
+    font-size: 10vw; } }
 .card {
   text-align: center;
   width: min-content;
@@ -355,15 +366,24 @@ svg {
   margin-top: -5px;
   padding: 2rem;
   line-height: 1.5rem;
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Ubuntu", sans-serif; 
+}
+
 @media(max-width: 415px) {
   .decription {
-    line-height: normal; } }
+    line-height: normal; 
+  } 
+
+  .decription p:last-child {
+    padding: 0 2rem;
+  }
+  }
+
 .heading {
   text-transform: uppercase;
   color: #f3ecec;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem; 
   margin-bottom: 1rem;
   letter-spacing: 2px; }
 
@@ -440,6 +460,23 @@ svg {
 #map {
   height: 500px;
   width: 600px; }
+
+  @media(max-width: 415px) {
+    .contact {
+      padding: 0;
+    }
+    .contact-info {
+      margin: 0 1rem;
+    }
+    .contact h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .info li {
+      padding: 1rem 0;
+      font-size: 1rem;
+    }
+  }
 
 /********************FOOTER*************** */
 footer {
