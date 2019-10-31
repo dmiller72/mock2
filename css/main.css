@@ -25,10 +25,7 @@ main {
   text-align: center; }
 @media(max-width: 416px) {
   main {
-    padding: 0;
-    overflow: hidden;
-  }
-
+    padding: 0; } }
 @keyframes color {
   0% {
     background-color: blue; }
@@ -342,80 +339,54 @@ svg {
     grid-column: 1; } }
 @media(max-width: 415px) {
   .projects h1 {
-    font-size: 10vw; }
-  .projects {
-    padding: 0;
-  } 
-  p.heading {
-    letter-spacing: 0;
-  }
-  
-}
+    font-size: 13vw; } }
 .card {
   text-align: center;
   width: min-content;
   margin: 0 1rem; }
   .card img {
     object-fit: cover; }
-
 @media(max-width: 415px) {
   .card img {
-    width: 415px; } 
-  }
-
-.description {
+    width: 415px; } }
+.decription {
   background-color: #222121;
   color: #c0bdbd;
   margin-top: -5px;
   padding: 2rem;
   line-height: 1.5rem;
-  font-family: "Ubuntu", sans-serif; 
-}
-
+  font-family: "Ubuntu", sans-serif; }
 @media(max-width: 415px) {
-  .description {
-    line-height: normal; 
-  } 
-  .description p:nth-child(2) {
-    padding: 0 1.5em;
-  }
-}
-
+  .decription {
+    line-height: normal; } }
 .heading {
   text-transform: uppercase;
   color: #f3ecec;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  letter-spacing: 2px; 
-}
+  letter-spacing: 2px; }
 
 /******************CONTACT***************** */
 .contact {
   background-color: #f2f2f2;
-  padding: 7rem 0 3rem 0; 
-}
+  padding: 7rem 0 3rem 0; }
 
-
-  
-}
 .contact-info {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto; }
+  width: 100%; }
 
 .contact h2 {
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 3rem;
   text-align: left;
   margin-bottom: 2rem; }
 
 .contact p {
   color: #403e3e;
-  margin-bottom: 2rem; 
-  font-family: "Ubuntu", sans-serif;
-}
+  margin-bottom: 2rem; }
 
 .info {
   display: flex;
@@ -470,32 +441,10 @@ svg {
   height: 500px;
   width: 600px; }
 
-
-@media(max-width: 415px) {
-  .contact {
-    padding: 1em;
-  }
-  .contact-info {
-    text-align: center;
-  }
-  .contact h2 {
-    text-align: center;
-  }
-
-  .info p {
-    margin: 0 2em; 
-    }
-
-  .info li::before {
-    margin: 0 1em;
-  }
 /********************FOOTER*************** */
 footer {
   background-color: darkgrey;
   padding: 30px;
   color: grey; }
 
-
-
-}
 /*# sourceMappingURL=main.css.map */
