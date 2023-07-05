@@ -7,12 +7,14 @@
 ul {
   list-style: none; }
 
+  body{ overflow-x: hidden;}
+
 /*********Main********* */
 main {
   display: flex;
   flex-direction: column;
-  height: 85vh;
-  background-image: url("https://picsum.photos/1920/1080?image=1067");
+  height: 100vh;
+  background-image: url("/img/jakob-owens-T7TLYFHgKt0-unsplash.jpg");
   background-size: cover;
   background-color: blue;
   background-blend-mode: multiply;
@@ -23,6 +25,7 @@ main {
   color: #f1e9e9;
   padding: 3rem 10vw 0;
   text-align: center; 
+  font-family: sans-serif;
 }
 
 @media(max-width: 416px) {
@@ -45,13 +48,26 @@ main h1 {
   letter-spacing: 5px; }
 
 main h4 {
-  font-size: 6vmin;
+  font-size: 4vmin;
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 1em; }
 
 main p {
-  font-size: 3vmin; }
+  font-size: 2.5vmin; }
+#cta {
+  color: darkblue;
+  background-color: white;
+  border: none;
+  padding: 1rem 2rem;
+  width: 15rem;
+  font: 1em sans-serif;
+  font-weight: bold;
+  border-radius: 25px;
+  align-self: center;
+  margin-top: 2rem;
+  cursor: pointer;
+}
 @media(max-width: 875px) {
   main p {
     display: none; } }
@@ -128,17 +144,26 @@ svg {
 /**************SERVICES************ */
 .services {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center; }
+  /* flex-flow: row wrap; */
+  justify-content: center; 
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  width: 100vw;
+}
 
 .service {
   margin: 3rem 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  border-right: 1px solid lightgrey; }
+  flex: 1;
+}
+
+.service img {
+  object-fit: cover;
+  width: 80%;
+  max-width: 100%;
+  border-radius: 50px;
+}
 @media(max-width: 1255px) {
   .service {
     border-right: 0; } }
@@ -151,17 +176,25 @@ svg {
   background-repeat: repeat;
   display: flex;
   flex-wrap: wrap;
-  padding: 7rem 0;
+  padding: 5rem;
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif; 
+
+}
 
 .about-container, .about img {
-  min-width: 340px; }
+  min-width: 340px; 
+  flex: 1;
+}
 
-.about-container {
-  width: 30%;
-  padding-right: 3rem; }
+.about img {
+  max-width:100%;
+  object-fit: cover;
+}
+
+.about-container {padding-right: 5rem;}
+
 @media(max-width: 908px) {
   .about-container {
     width: 100%;
@@ -186,7 +219,8 @@ svg {
   display: flex;
   padding: 2rem 0;
   align-items: flex-start;
-  border-bottom: 1px solid #c0bdbd; }
+  border-bottom: 1px solid #c0bdbd; 
+  }
 
 .about-left:last-of-type {
   border-bottom: none; }
@@ -206,7 +240,7 @@ svg {
 
 /***********RANDOM*************** */
 .random {
-  background-image: url("https://picsum.photos/g/1100/600?image=985"), linear-gradient(to bottom right, #ab74b3, #1a6fa8);
+  background-image: url("/img/promo.jpg"), linear-gradient(to bottom right, #ab74b3, #1a6fa8);
   background-blend-mode: soft-light;
   background-size: cover;
   filter: brightness(75%);
@@ -480,8 +514,47 @@ svg {
 
 /********************FOOTER*************** */
 footer {
-  background-color: darkgrey;
+  background-color: rgb(47, 16, 225);
   padding: 30px;
-  color: grey; }
+  color: grey;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  font-family: sans-serif;
+  justify-content: space-around;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.subscribe input, .subscribe button {
+  padding: 1rem;
+  font-size: 1rem;
+  width: 50%;
+}
+
+.subscribe button{
+  border: white solid 3px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+.copywright, .social-media {
+  grid-column: 1/ span 2;
+  text-align: center;
+}
+
+.social-media img {
+  max-width: 2vw;
+  min-width: 1vw;
+  margin: .5rem 1rem;
+}
+
+
+
 
 /*# sourceMappingURL=main.css.map */
